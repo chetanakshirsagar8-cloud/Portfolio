@@ -3,90 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chetana Kshirsagar | Portfolio</title>
+    <title>Chetana's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">Portfolio</div>
-        <ul class="nav-links">
-            <li><a href="javascript:void(0)" onclick="openHome()">Home</a></li>
-            <li><a href="javascript:void(0)" onclick="openAbout()">About</a></li>
-            <li><a href="javascript:void(0)" onclick="openProjects()">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav>
+        <button onclick="openSection('home')">Home</button>
+        <button onclick="openSection('about')">About</button>
+        <button onclick="openSection('projects')">Projects</button>
     </nav>
 
-    <div id="home-page">
-        <header id="hero" class="hero-container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Chetana Kshirsagar</span></h1>
-                <p>A Web Developer building responsive experiences.</p>
-                <button class="btn" onclick="openProjects()">View My Work</button>
+    <section id="projects" class="content-section" style="display:none;">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>A sleek, professional portfolio website built with HTML5 and CSS3 Grid.</p>
             </div>
-        </header>
-    </div>
-
-    <div id="about-page" style="display: none;">
-        <section class="about-detailed">
-            <div class="container">
-                <h1>About Me</h1>
-                <div class="about-grid">
-                    <div class="bio">
-                        <h2>I am <span class="highlight">Chetana Kshirsagar</span></h2>
-                        <p>I am a dedicated Web developer. I have interest in technology and trying to learn and get the new experiences.</p>
-                        <p>My aim is to build user friendly websites that provide great experiences.</p>
-                    </div>
-
-                    <div class="details-list">
-                        <div class="detail-item">
-                            <strong>🎓 Education:</strong>
-                            <p>Pursuing Degree in Information Technology - MGI-COET, Shegaon</p>
-                        </div>
-                        <div class="detail-item">
-                            <strong>💼 Experience:</strong>
-                            <p>Frontend Training (HTML, CSS, JS) - Current</p>
-                        </div>
-                        <div class="detail-item">
-                            <strong>📍 Location:</strong>
-                            <p>Maharashtra, India</p>
-                        </div>
-                        <div class="detail-item">
-                            <strong>📧 Email:</strong>
-                            <p>chetana@example.com</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="btn" onclick="openHome()">Back to Home</button>
+            <div class="project-card">
+                <h3>Responsive Layout</h3>
+                <p>A mobile-first layout focusing on flexible grids and smooth transitions.</p>
             </div>
-        </section>
-    </div>
-
-    <div id="projects-page" style="display: none;">
-        <section class="projects-container">
-            <div class="container">
-                <h1>My Projects</h1>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <div class="project-img">💻</div>
-                        <div class="project-info">
-                            <h3>Personal Portfolio</h3>
-                            <p>An interactive portfolio built with HTML, CSS, and JS logic.</p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-img">📱</div>
-                        <div class="project-info">
-                            <h3>Responsive Layout</h3>
-                            <p>A mobile-first landing page design using Flexbox and Grid.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="btn" onclick="openHome()">Back to Home</button>
             </div>
-        </section>
-    </div>
+    </section>
 
     <script src="script.js"></script>
 </body>

@@ -1,20 +1,18 @@
-function openHome() {
-    document.getElementById('home-page').style.display = 'block';
-    document.getElementById('about-page').style.display = 'none';
-    document.getElementById('projects-page').style.display = 'none';
-}
+function openSection(sectionId) {
+    // 1. Hide all sections first
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
 
-function openAbout() {
-    document.getElementById('home-page').style.display = 'none';
-    document.getElementById('about-page').style.display = 'block';
-    document.getElementById('projects-page').style.display = 'none';
-}
+    // 2. Show the selected section
+    const selectedSection = document.getElementById(sectionId);
+    if (sectionId === 'projects') {
+        selectedSection.style.display = 'block'; // Or 'grid'
+    } else {
+        selectedSection.style.display = 'block';
+    }
 
-function openProjects() {
-    document.getElementById('home-page').style.display = 'none';
-    document.getElementById('about-page').style.display = 'none';
-    document.getElementById('projects-page').style.display = 'block';
+    // 3. Scroll to top automatically
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
-// Nav links properly work honyasathi he add kara
-function showHome() { openHome(); }
