@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,19 +11,67 @@
     <nav class="navbar">
         <div class="logo">Portfolio</div>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
+            <li><a href="javascript:void(0)" onclick="openHome()">Home</a></li>
+            <li><a href="javascript:void(0)" onclick="openAbout()">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+<div id="about-content" style="display: none;">
+    <section class="about-detailed">
+        <div class="container">
+            <h1>About Me</h1>
+            <div class="about-grid">
+                <div class="bio">
+                    <h2>I am <span class="highlight">Chetana Kshirsagar</span></h2>
+                    <p>I am a dedicated Web developer. I have intrest in technology and trying to learn and get the new experiences.</p>
+                    <p>My aim to build a user friendly website.</p>
+                </div>
 
-    <header id="hero" class="hero-container">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">[Your Name]</span></h1>
-            <p>A Web Developer building responsive experiences.</p>
-            <a href="#projects" class="btn">View My Work</a>
+                <div class="details-list">
+                    <div class="detail-item">
+                        <strong>🎓 Education:</strong>
+                        <p>Pursuing Degree in Information Technology / [Information Technology]</p>
+                    </div>
+                    <div class="detail-item">
+                        <strong>💼 Experience:</strong>
+                        <p>Frontend Training (HTML, CSS, JS) - Current</p>
+                    </div>
+                    <div class="detail-item">
+                        <strong>📍 Location:</strong>
+                        <p>Maharashtra, India</p>
+                    </div>
+                    <div class="detail-item">
+                        <strong>📧 Email:</strong>
+                        <p>chetana@example.com</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn" onclick="showHome()">Back to Home</button>
         </div>
-    </header>
+    </section>
+</div>
+    <div id="home-page">
+        <header id="hero" class="hero-container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">[Your Name]</span></h1>
+                <p>A Web Developer building responsive experiences.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </header>
+    </div>
 
+    <div id="about-page" style="display: none;">
+        <section class="about-container">
+            <h1>About Me</h1>
+            <div class="about-card">
+                <p>Maza nav [Your Name] ahe. Me ek student ahe aani web development shiktoy. Mala HTML, CSS aani JS vaprun interactive websites banvayla avadte.</p>
+                <p><strong>Skills:</strong> HTML5, CSS3, JavaScript, Responsive Design.</p>
+                <button class="btn" onclick="openHome()">Back to Home</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

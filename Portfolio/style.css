@@ -1,29 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* About Page Section Styling */
+#about-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding-top: 80px; /* Navbar sathi jaga sodli ahe */
+}
 
-    <nav class="navbar">
-        <div class="logo">Portfolio</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+.about-container {
+    text-align: center;
+    max-width: 600px;
+}
 
-    <header id="hero" class="hero-container">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">[Your Name]</span></h1>
-            <p>A Web Developer building responsive experiences.</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </header>
+.about-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
 
-</body>
-</html>
+.about-card p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
